@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l8I1fbvpkhZ+JloavKTIdhAEt6pBDTP0ECQnfX9QPG66K42+w0gQwM96fyj5Cznrzh5O0JrTF5OGWYWvb8mRdA==",
+  "dgSpecHash": "JzwLZ19XcVfJMwhup4ZMhGzvcwx5HKTp83vgjdkYaj4MmpNicl8Sn3TKl+JoVRng2hvajv/ESArKALJmEWeilg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\derri\\source\\repos\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\derri\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\derri\\source\\repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
