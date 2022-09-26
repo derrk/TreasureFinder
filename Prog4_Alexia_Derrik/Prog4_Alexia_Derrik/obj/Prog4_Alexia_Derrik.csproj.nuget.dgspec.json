@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\derri\\source\\repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj": {}
+    "C:\\Users\\derri\\Source\\Repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj": {}
   },
   "projects": {
-    "C:\\Users\\derri\\source\\repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj": {
+    "C:\\Users\\derri\\Source\\Repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\derri\\source\\repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj",
+        "projectUniqueName": "C:\\Users\\derri\\Source\\Repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj",
         "projectName": "Prog4_Alexia_Derrik",
-        "projectPath": "C:\\Users\\derri\\source\\repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj",
+        "projectPath": "C:\\Users\\derri\\Source\\Repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik.csproj",
         "packagesPath": "C:\\Users\\derri\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\derri\\Source\\Repos\\Prog4\\Prog4_Alexia_Derrik\\Prog4_Alexia_Derrik\\obj\\",
         "projectStyle": "PackageReference",

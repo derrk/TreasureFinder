@@ -23,7 +23,6 @@ C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\bin\De
 C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\bin\Debug\net5.0-windows\Prog4_Alexia_Derrik.dll
 C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\bin\Debug\net5.0-windows\Prog4_Alexia_Derrik.pdb
 C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\Debug\net5.0-windows\Prog4_Alexia_Derrik.csproj.AssemblyReference.cache
-C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\Debug\net5.0-windows\Prog4_Alexia_Derrik.GameBox.resources
 C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\Debug\net5.0-windows\Prog4_Alexia_Derrik.csproj.GenerateResource.cache
 C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\Debug\net5.0-windows\Prog4_Alexia_Derrik.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\Debug\net5.0-windows\Prog4_Alexia_Derrik.AssemblyInfoInputs.cache
@@ -34,3 +33,4 @@ C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\De
 C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\Debug\net5.0-windows\Prog4_Alexia_Derrik.pdb
 C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\Debug\net5.0-windows\Prog4_Alexia_Derrik.genruntimeconfig.cache
 C:\Users\derri\source\repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\Debug\net5.0-windows\ref\Prog4_Alexia_Derrik.dll
+C:\Users\derri\Source\Repos\Prog4\Prog4_Alexia_Derrik\Prog4_Alexia_Derrik\obj\Debug\net5.0-windows\Prog4_Alexia_Derrik.FindTheIslandGame.resources

@@ -38,19 +38,28 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.userGuessRows = new System.Windows.Forms.NumericUpDown();
+            this.userGuessColumns = new System.Windows.Forms.NumericUpDown();
             this.enterButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.mapBox = new System.Windows.Forms.GroupBox();
+            this.MapTextBox = new System.Windows.Forms.RichTextBox();
             this.GameMap = new System.Windows.Forms.BindingSource(this.components);
+            this.createMap = new System.Windows.Forms.Button();
+            this.mapSizeRows = new System.Windows.Forms.NumericUpDown();
+            this.mapSizeColumns = new System.Windows.Forms.NumericUpDown();
+            this.mapRows = new System.Windows.Forms.Label();
+            this.mapColumns = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userGuessRows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userGuessColumns)).BeginInit();
+            this.mapBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GameMap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapSizeRows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapSizeColumns)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -118,24 +127,24 @@
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 0;
             // 
-            // numericUpDown4
+            // userGuessRows
             // 
-            this.numericUpDown4.AccessibleName = "latVal";
-            this.numericUpDown4.BackColor = System.Drawing.SystemColors.GrayText;
-            this.numericUpDown4.Location = new System.Drawing.Point(30, 91);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDown4.TabIndex = 0;
-            this.numericUpDown4.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
+            this.userGuessRows.AccessibleName = "latVal";
+            this.userGuessRows.BackColor = System.Drawing.SystemColors.GrayText;
+            this.userGuessRows.Location = new System.Drawing.Point(30, 91);
+            this.userGuessRows.Name = "userGuessRows";
+            this.userGuessRows.Size = new System.Drawing.Size(120, 23);
+            this.userGuessRows.TabIndex = 0;
+            this.userGuessRows.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
             // 
-            // numericUpDown5
+            // userGuessColumns
             // 
-            this.numericUpDown5.AccessibleName = "longVal";
-            this.numericUpDown5.BackColor = System.Drawing.SystemColors.GrayText;
-            this.numericUpDown5.Location = new System.Drawing.Point(181, 91);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDown5.TabIndex = 1;
+            this.userGuessColumns.AccessibleName = "longVal";
+            this.userGuessColumns.BackColor = System.Drawing.SystemColors.GrayText;
+            this.userGuessColumns.Location = new System.Drawing.Point(181, 91);
+            this.userGuessColumns.Name = "userGuessColumns";
+            this.userGuessColumns.Size = new System.Drawing.Size(120, 23);
+            this.userGuessColumns.TabIndex = 1;
             // 
             // enterButton
             // 
@@ -166,35 +175,94 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Longitude";
             // 
-            // groupBox1
+            // mapBox
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox1.Location = new System.Drawing.Point(30, 138);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(278, 184);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Map";
+            this.mapBox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.mapBox.Controls.Add(this.MapTextBox);
+            this.mapBox.Location = new System.Drawing.Point(30, 138);
+            this.mapBox.Name = "mapBox";
+            this.mapBox.Size = new System.Drawing.Size(278, 184);
+            this.mapBox.TabIndex = 5;
+            this.mapBox.TabStop = false;
+            this.mapBox.Text = "Map";
+            // 
+            // MapTextBox
+            // 
+            this.MapTextBox.Location = new System.Drawing.Point(6, 22);
+            this.MapTextBox.Name = "MapTextBox";
+            this.MapTextBox.Size = new System.Drawing.Size(265, 156);
+            this.MapTextBox.TabIndex = 0;
+            this.MapTextBox.Text = "";
+            // 
+            // createMap
+            // 
+            this.createMap.Location = new System.Drawing.Point(337, 38);
+            this.createMap.Name = "createMap";
+            this.createMap.Size = new System.Drawing.Size(133, 23);
+            this.createMap.TabIndex = 6;
+            this.createMap.Text = "Create Map";
+            this.createMap.UseVisualStyleBackColor = true;
+            this.createMap.Click += new System.EventHandler(this.createMap_Click);
+            // 
+            // mapSizeRows
+            // 
+            this.mapSizeRows.Location = new System.Drawing.Point(30, 38);
+            this.mapSizeRows.Name = "mapSizeRows";
+            this.mapSizeRows.Size = new System.Drawing.Size(120, 23);
+            this.mapSizeRows.TabIndex = 7;
+            // 
+            // mapSizeColumns
+            // 
+            this.mapSizeColumns.Location = new System.Drawing.Point(181, 38);
+            this.mapSizeColumns.Name = "mapSizeColumns";
+            this.mapSizeColumns.Size = new System.Drawing.Size(120, 23);
+            this.mapSizeColumns.TabIndex = 8;
+            // 
+            // mapRows
+            // 
+            this.mapRows.AutoSize = true;
+            this.mapRows.Location = new System.Drawing.Point(30, 20);
+            this.mapRows.Name = "mapRows";
+            this.mapRows.Size = new System.Drawing.Size(62, 15);
+            this.mapRows.TabIndex = 9;
+            this.mapRows.Text = "# of Rows ";
+            // 
+            // mapColumns
+            // 
+            this.mapColumns.AutoSize = true;
+            this.mapColumns.Location = new System.Drawing.Point(181, 20);
+            this.mapColumns.Name = "mapColumns";
+            this.mapColumns.Size = new System.Drawing.Size(79, 15);
+            this.mapColumns.TabIndex = 10;
+            this.mapColumns.Text = "# of Columns";
             // 
             // FindTheIslandGame
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(574, 342);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(741, 490);
+            this.Controls.Add(this.mapColumns);
+            this.Controls.Add(this.mapRows);
+            this.Controls.Add(this.mapSizeColumns);
+            this.Controls.Add(this.mapSizeRows);
+            this.Controls.Add(this.createMap);
+            this.Controls.Add(this.mapBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.enterButton);
-            this.Controls.Add(this.numericUpDown5);
-            this.Controls.Add(this.numericUpDown4);
+            this.Controls.Add(this.userGuessColumns);
+            this.Controls.Add(this.userGuessRows);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FindTheIslandGame";
             this.Text = "Find The Island Game";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userGuessRows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userGuessColumns)).EndInit();
+            this.mapBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GameMap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapSizeRows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapSizeColumns)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,12 +278,18 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown userGuessRows;
+        private System.Windows.Forms.NumericUpDown userGuessColumns;
         private System.Windows.Forms.Button enterButton;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox mapBox;
         private System.Windows.Forms.BindingSource GameMap;
+        private System.Windows.Forms.Button createMap;
+        private System.Windows.Forms.NumericUpDown mapSizeRows;
+        private System.Windows.Forms.NumericUpDown mapSizeColumns;
+        private System.Windows.Forms.Label mapRows;
+        private System.Windows.Forms.Label mapColumns;
+        public System.Windows.Forms.RichTextBox MapTextBox;
     }
 }
