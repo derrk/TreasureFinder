@@ -30,10 +30,11 @@ namespace Prog4_Alexia_Derrik
 
         private void checkValues(object sender, EventArgs e)
         {
-
+            NavigationSystem.guessRow = int.Parse(userGuessRows.Text); 
+            NavigationSystem.guessColumn = int.Parse(userGuessColumns.Text);
         }
 
-        private void createMap_Click(object sender, EventArgs e)
+        public void createMap_Click(object sender, EventArgs e)
         {
            
 
@@ -46,22 +47,20 @@ namespace Prog4_Alexia_Derrik
 
                 char[,] printout = new char[Int32.Parse(mapSizeRows.Text + 1), Int32.Parse(mapSizeColumns.Text + 1)];
 
-                for (int i = 0; i < NavigationSystem.userColumns; i++)
-                {
-                    for (int j = 0; j < NavigationSystem.userRows; j++)
-                    {
-                        printout[i, j] = '~';
-                        Console.Write(printout[i, j]);
-                    }
-                    Console.Write("\n");
-                }
+                //for (int i = 0; i < NavigationSystem.userColumns; i++)
+                //{
+                //    for (int j = 0; j < NavigationSystem.userRows; j++)
+                //    {
+                //        printout[i, j] = '~';
+                //        Console.Write(printout[i, j]);
+                //    }
+                //    Console.Write("\n");
+                //}
 
                 //NavigationSystem navigationSystem = new NavigationSystem(userRows, userColumns);
 
-                //MapTextBox.Text = NavigationSystem.PrintMap(printout);
-                //MapTextBox.Text = ($"Rows: {NavigationSystem.userRows} Cols: {NavigationSystem.userColumns}");
-                //MapTextBox.Text = NavigationSystem.PrintMap(printout);
-                //MapTextBox.Text = PrintMap(printout);
+              
+                MapTextBox.Text = PrintMap(printout);
                 //MapTextBox.Text = NavigationSystem.;
 
             }

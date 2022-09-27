@@ -188,6 +188,7 @@
             // 
             // MapTextBox
             // 
+            this.MapTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MapTextBox.Location = new System.Drawing.Point(6, 22);
             this.MapTextBox.Name = "MapTextBox";
             this.MapTextBox.Size = new System.Drawing.Size(265, 156);
