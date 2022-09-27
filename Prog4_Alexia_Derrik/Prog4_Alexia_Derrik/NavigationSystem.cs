@@ -19,7 +19,7 @@ namespace Prog4_Alexia_Derrik
         // char to send to main class to print the char at current index
         public char text;
         // map print
-        public string mapPrint = PrintMap(null);
+        //public string mapPrint = PrintMap();
        
 
         public NavigationSystem(int userRows, int userColumns)
@@ -32,7 +32,7 @@ namespace Prog4_Alexia_Derrik
             int guessCount = 0;
 
             char Mapper = GenerateMap(mapper, gameMap, islandRow, islandCol);
-            //String mapPrint = PrintMap(gameMap);
+            PrintMap(gameMap);
         }
 
 
@@ -52,10 +52,10 @@ namespace Prog4_Alexia_Derrik
                     }
                 }
             }
-            return gameMap[userRows,userColumns];
+            return mapper[userRows,userColumns];
         }
 
-        public static String PrintMap(char[,]? gameMap)
+        public static string PrintMap(char[,]? gameMap)
         {
            // char[,] gameMap = new char[userRows, userColumns];
             //char text;
@@ -64,17 +64,14 @@ namespace Prog4_Alexia_Derrik
             {
                 for(int j = 0; j < userColumns; j++)
                 {
+                    gameMap[i, j] = '~';
+                    text = text + gameMap[i,j];
                     
-                    text += gameMap[i, j];
-                    if (j == userColumns - 1)
-                    {
-                        return text;
-                    }
                 }
-                return "\n";
-                text = "";
+                Console.Write("\n");                
             }
-            return "";
+            return text;
+            // gameMap[userRows,userColumns];
         }
 
 
