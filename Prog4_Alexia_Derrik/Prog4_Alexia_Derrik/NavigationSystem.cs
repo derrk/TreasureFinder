@@ -18,6 +18,8 @@ namespace Prog4_Alexia_Derrik
         public char[,] gameMap = new char[userRows, userColumns];
         // char to send to main class to print the char at current index
         public char text;
+        // map print
+        public string mapPrint = PrintMap(null);
        
 
         public NavigationSystem(int userRows, int userColumns)
@@ -29,8 +31,8 @@ namespace Prog4_Alexia_Derrik
             // user guesses count
             int guessCount = 0;
 
-            GenerateMap(mapper, gameMap, islandRow, islandCol);
-            PrintMap(gameMap);
+            char Mapper = GenerateMap(mapper, gameMap, islandRow, islandCol);
+            //String mapPrint = PrintMap(gameMap);
         }
 
 
@@ -53,7 +55,7 @@ namespace Prog4_Alexia_Derrik
             return gameMap[userRows,userColumns];
         }
 
-        public static String PrintMap(char[,] gameMap)
+        public static String PrintMap(char[,]? gameMap)
         {
            // char[,] gameMap = new char[userRows, userColumns];
             //char text;

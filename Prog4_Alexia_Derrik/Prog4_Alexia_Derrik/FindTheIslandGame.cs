@@ -46,6 +46,7 @@ namespace Prog4_Alexia_Derrik
 
                 //MapTextBox.Text = NavigationSystem.PrintMap(printout);
                 MapTextBox.Text = PrintMap(printout).ToString();
+                //MapTextBox.Text = NavigationSystem.;
 
             }
             //var instance = new NavigationSystem(Int32.Parse(mapSizeRows.Text), Int32.Parse(mapSizeColumns.Text));
